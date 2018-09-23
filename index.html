@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Add Volunteers Data
+        </title>
+    </head>
+    <body>
+        First Name <input id="fname" type="text"/><br/>
+        Middle Name <input id="mname" type="text"/><br/>
+        Last Name Name <input id="lname" type="text"/><br/>
+        Volunteer Number <input id="volunteernumber" type="text"/><br/>
+        Course Name <input id="coursename" type="text"/><br/>
+        Nss Enrollment Year <input id="enrollmentyear" type="text"/><br/>
+        Gender <input type="radio" id="gendermale" name="gender" value="male">Male <input id="genderfemale" type="radio" name="gender" value="female"> Female<br/>
+        
+        <input type="button" id="submit" onclick="submitData()" value="Submit"  />
+        
+        
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAGkzK5YdLRJOZVDEWG-1AgCCtfslzD_po",
+        authDomain: "nationalitenssapp.firebaseapp.com",
+        databaseURL: "https://nationalitenssapp.firebaseio.com",
+        projectId: "nationalitenssapp",
+        storageBucket: "nationalitenssapp.appspot.com",
+        messagingSenderId: "301966822272"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
